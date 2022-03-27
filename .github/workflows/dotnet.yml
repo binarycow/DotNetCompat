@@ -33,6 +33,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: packages
-        path: |
-          packages/*.nupkg
-          packages/*.snupkg
+        path: packages/*.*

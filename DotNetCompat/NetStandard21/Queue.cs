@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using DotNetCompat.InternalExtensions;
 
-namespace DotNetCompat.NetStandard21;
+// ReSharper disable once CheckNamespace
+namespace System.Collections.Generic;
 
 public static class Queue
 {
