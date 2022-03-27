@@ -1,10 +1,10 @@
 ﻿#if !(NETSTANDARD2_1_OR_GREATER || NETCOREAPP2_1_OR_GREATER)
 
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using DotNetCompat.InternalExtensions;
 
-namespace DotNetCompat.NetStandard21;
+// ReSharper disable once CheckNamespace
+namespace System.Collections.Generic;
 
 public static class Stack
 {
