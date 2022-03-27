@@ -6,15 +6,15 @@ using DotNetCompat.InternalExtensions;
 
 namespace DotNetCompat.NetStandard21;
 
-public static class Stack
+public static class Queue
 {
-    public static bool TryPop<T>(this Stack<T> stack, [MaybeNullWhen(false)] out T result) 
+    public static bool TryDequeue<T>(this Queue<T> stack, [MaybeNullWhen(false)] out T result) 
         => (stack.Count is 0
-            ? (false, default)
-            : (true, stack.Pop())
-        ).Try(out result);
+                ? (false, default)
+                : (true, stack.Dequeue())
+            ).Try(out result);
     
-    public static bool TryPeek<T>(this Stack<T> stack, [MaybeNullWhen(false)] out T result)
+    public static bool TryPeek<T>(this Queue<T> stack, [MaybeNullWhen(false)] out T result)
         => (stack.Count is 0
                 ? (false, default)
                 : (true, stack.Peek())
