@@ -7,7 +7,7 @@ using DotNetCompat.InternalExtensions;
 // ReSharper disable once CheckNamespace
 namespace System.Collections.Generic;
 
-public static class Queue
+public static partial class Queue
 {
     public static bool TryDequeue<T>(this Queue<T> stack, [MaybeNullWhen(false)] out T result) 
         => (stack.Count is 0

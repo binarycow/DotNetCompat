@@ -6,7 +6,7 @@ using DotNetCompat.InternalExtensions;
 // ReSharper disable once CheckNamespace
 namespace System.Collections.Generic;
 
-public static class Stack
+public static partial class Stack
 {
     public static bool TryPop<T>(this Stack<T> stack, [MaybeNullWhen(false)] out T result) 
         => (stack.Count is 0
